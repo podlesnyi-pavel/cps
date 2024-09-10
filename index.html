@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.1.4</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__action-button action-button-icon">
+            <img
+              class="action-button-icon__img"
+              src="./images/icons/menu.svg"
+              alt="menu"
+            />
+          </button>
+
+          <div class="header__separate header__separate--min-tablet"></div>
+
+          <img
+            src="./images/logo.svg"
+            alt="Лого CPS"
+            class="header__logo logo"
+          />
+
+          <button
+            class="header__action-button header__action-button--min-tablet action-button-icon"
+          >
+            <img
+              class="action-button-icon__img"
+              src="./images/icons/phone.svg"
+              alt="Позвонить"
+            />
+          </button>
+
+          <button
+            class="header__action-button header__action-button--min-tablet action-button-icon"
+          >
+            <img
+              class="action-button-icon__img"
+              src="./images/icons/message.svg"
+              alt="Написать"
+            />
+          </button>
+
+          <button
+            class="header__action-button header__action-button--min-tablet action-button-icon"
+          >
+            <img
+              class="action-button-icon__img"
+              src="./images/icons/contact.svg"
+              alt="Контакты"
+            />
+          </button>
+
+          <div class="header__separate"></div>
+
+          <button class="header__action-button action-button-icon">
+            <img
+              class="action-button-icon__img"
+              src="./images/icons/tech.svg"
+              alt="Оставить заявку"
+            />
+          </button>
+
+          <button class="header__action-button action-button-icon">
+            <img
+              class="action-button-icon__img"
+              src="./images/icons/search.svg"
+              alt="Статус ремонта"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="page-title page-title--mobile">Услуги и сервисы</h1>
+
+      <div class="main__wrapper-page-title">
+        <h1 class="main__page-title page-title">Услуги и сервисы</h1>
+
+        <button class="main__action-button action-button">
+          <span class="action-button__text">Оставить заявку</span>
+          <div class="action-button-icon">
+            <img
+              class="action-button-icon__img"
+              src="./images/icons/tech.svg"
+              alt="Оставить заявку"
+            />
+          </div>
+        </button>
+
+        <button class="main__action-button action-button">
+          <span class="action-button__text">Статус ремонта</span>
+          <div class="action-button-icon">
+            <img
+              class="action-button-icon__img"
+              src="./images/icons/search.svg"
+              alt="Статус ремонта"
+            />
+          </div>
+        </button>
+      </div>
+
+      <div class="container">
+        <nav class="page-menu">
+          <ul class="page-menu__list">
+            <li class="page-menu__item">
+              <a href="#brends" class="page-menu__link page-menu__link--active"
+                >Ремонтируемые бренды</a
+              >
+            </li>
+            <li class="page-menu__item">
+              <a href="#devices" class="page-menu__link">
+                Ремонтируемые устройства
+              </a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#additional-services" class="page-menu__link">
+                Дополнительные услуги
+              </a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#prices" class="page-menu__link">Цены на услуги</a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#addresses" class="page-menu__link">
+                Адреса сервисных центров
+              </a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#prices" class="page-menu__link">Специальные цены</a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#reviews" class="page-menu__link">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="about">
+        <div class="about__description about__item">
+          <p class="about__p">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <br />
+          <p class="about__p">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера
+            <span>
+              , что подтверждает большое количество постоянных клиентов. Мы
+              гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </span>
+          </p>
+
+          <button class="about__show-more-button show-more-button">
+            <img
+              src="./images/icons/two-arrows-down.svg"
+              alt=""
+              class="show-more-button__img"
+            />
+            Читать далее
+          </button>
+        </div>
+
+        <picture class="about__item">
+          <source
+            srcset="images/cps-on-wall-1120.jpg"
+            type="image/jpg"
+            media="(min-width: 1120px)"
+          />
+          <source
+            srcset="images/cps-on-wall-768.jpg"
+            type="image/jpg"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="images/cps-on-wall.jpg"
+            type="image/jpg"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/cps-on-wall.jpg"
+            alt="CPS вывеска на стене"
+            class="about__img about__item"
+          />
+        </picture>
+      </section>
+    </main>
+  </body>
+</html>

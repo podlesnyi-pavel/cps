@@ -27,8 +27,4 @@
   .page-title::before {
     margin-right: 30px;
   }
-
-  .page-title--mobile {
-    display: none;
-  }
 }

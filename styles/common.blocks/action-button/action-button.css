@@ -1,4 +1,3 @@
-/* if need button with text - wrap this with tag button, then use div for action-button-icon */
 .action-button {
   display: flex;
   align-items: center;
@@ -9,24 +8,18 @@
   outline: none;
 }
 
+.action-button__text {
+  margin-right: 8px;
+  border-bottom: 2px solid transparent;
+}
+
 .action-button:hover .action-button__text,
 .action-button:focus .action-button__text,
 .action-button:active .action-button__text {
   border-bottom: 2px solid #b8ffec;
 }
 
-.action-button:hover .action-button-icon,
-.action-button:focus .action-button-icon,
-.action-button:active .action-button-icon {
-  background-color: #b8ffec;
-}
-
-.action-button__text {
-  margin-right: 8px;
-  border-bottom: 2px solid transparent;
-}
-
-.action-button-icon {
+.action-button__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,13 +30,13 @@
   outline: none;
 }
 
-.action-button-icon:hover,
-.action-button-icon:focus,
-.action-button-icon:active {
+.action-button:hover .action-button__icon,
+.action-button:focus .action-button__icon,
+.action-button:active .action-button__icon {
   background-color: #b8ffec;
 }
 
-.action-button-icon__img {
+.action-button__img {
   max-width: 100%;
   height: auto;
 }

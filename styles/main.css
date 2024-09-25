@@ -10,6 +10,19 @@
 @import url('./common.blocks/show-more-button/show-more-button.css');
 @import url('./common.blocks/switcher-languages/switcher-languages.css');
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   font-family: 'TT Lakes', sans-serif;
   font-weight: normal;
@@ -17,6 +30,12 @@ html {
   line-height: 18px;
   letter-spacing: 0.2px;
   color: #1b1c21;
+}
+
+@media (min-width: 768px) {
+  html {
+    line-height: 20px;
+  }
 }
 
 body {

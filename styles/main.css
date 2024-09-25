@@ -2,11 +2,13 @@
 @import url('custom-reset.css');
 
 @import url('./layouts/container/container.css');
+@import url('./layouts/aside-menu/aside-menu.css');
 
 @import url('./common.blocks/action-button/action-button.css');
 @import url('./common.blocks/logo/logo.css');
 @import url('./common.blocks/page-title/page-title.css');
 @import url('./common.blocks/show-more-button/show-more-button.css');
+@import url('./common.blocks/switcher-languages/switcher-languages.css');
 
 html {
   font-family: 'TT Lakes', sans-serif;
@@ -78,8 +80,6 @@ body {
 }
 
 .header__logo {
-  display: flex;
-  align-items: center;
   margin-right: auto;
 }
 
@@ -91,6 +91,9 @@ body {
 
 .header__buttons {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @media (min-width: 768px) {
@@ -136,6 +139,9 @@ body {
 
 .main__top-buttons {
   display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .main__top-button + .main__top-button {
@@ -150,11 +156,14 @@ body {
 
 .page-menu__list {
   display: flex;
+  margin: 0;
   margin-top: 24px;
+  padding: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
+  list-style-type: none;
   overflow-x: scroll;
 
   -ms-overflow-style: none; /* edge */

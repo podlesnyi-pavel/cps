@@ -1,5 +1,6 @@
 .page-title {
   display: flex;
+  margin: 0;
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;

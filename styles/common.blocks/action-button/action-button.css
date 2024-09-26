@@ -37,6 +37,11 @@
   transition: filter 0.3s;
 }
 
+.action-button__icon--outline {
+  background-color: transparent;
+  border: 2px solid #ff3e79;
+}
+
 .action-button:hover .action-button__icon,
 .action-button:focus .action-button__icon,
 .action-button:active .action-button__icon {
@@ -85,5 +90,10 @@
 
 .action-button__icon--contact {
   background: #ff3e79 url('../../../images/icons/contact.svg') no-repeat center;
+}
+
+.action-button__icon--arrow-to-right {
+  background: url('../../../images/icons/arrow-to-right-.svg') no-repeat 55%
+    center;
 }
 /* types images */

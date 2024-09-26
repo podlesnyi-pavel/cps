@@ -4,11 +4,14 @@
 @import url('./layouts/container/container.css');
 @import url('./layouts/aside-menu/aside-menu.css');
 
+@import url('../components/swiper/swiper.css');
+
 @import url('./common.blocks/action-button/action-button.css');
 @import url('./common.blocks/logo/logo.css');
 @import url('./common.blocks/page-title/page-title.css');
 @import url('./common.blocks/show-more-button/show-more-button.css');
 @import url('./common.blocks/switcher-languages/switcher-languages.css');
+@import url('./common.blocks/section-title/section-title.css');
 
 .visually-hidden {
   position: absolute;
@@ -49,6 +52,7 @@ body {
   min-height: 88px;
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #d9fff5;
 }
 
 @media (min-width: 1120px) {
@@ -235,6 +239,10 @@ body {
   border-radius: 5px;
 }
 
+.section {
+  border-top: 1px solid #d9fff5;
+}
+
 .about {
   max-width: 1440px;
   margin: 0 auto;
@@ -324,4 +332,43 @@ picture {
     height: 307px;
     padding: 0 24px 0 34px;
   }
+}
+
+.brands-section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .brands-section {
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .brands-section {
+    padding-bottom: 50px;
+  }
+}
+
+.brands-section__show-more-button {
+  display: none;
+  transition: margin-top 1s; /* time like .swiper__wrapper */
+}
+
+@media (min-width: 768px) {
+  .brands-section__show-more-button {
+    display: flex;
+    margin: 0 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .brands-section__show-more-button {
+    margin: 0 32px;
+  }
+}
+
+.brands-section__show-more-button--active {
+  margin-top: 22px;
 }

@@ -353,7 +353,7 @@ picture {
 
 .brands-section__show-more-button {
   display: none;
-  transition: margin-top 1s; /* time like .swiper__wrapper */
+  transition: margin-top 1s linear, border-bottom 0.3s; /* margin-top time like .swiper__wrapper */
 }
 
 @media (min-width: 768px) {
